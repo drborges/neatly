@@ -6,7 +6,7 @@ import "./styles.css";
 export default function App() {
   return (
     <>
-      <View padding="sm">
+      <View padding="sm" stretched scroll>
         <CardView padding="lg" margin="sm">
           Item 1
         </CardView>
@@ -18,7 +18,7 @@ export default function App() {
         </CardView>
       </View>
 
-      <View.Stack padding="sm">
+      <View.Stack padding="sm" stretched>
         <CardView padding="lg" margin="sm">
           Item 1
         </CardView>
@@ -30,7 +30,7 @@ export default function App() {
         </CardView>
       </View.Stack>
 
-      <View padding="sm" scroll>
+      <View padding="sm" scroll stretched>
         <CardView padding="lg" margin="sm">
           Item 1
         </CardView>
