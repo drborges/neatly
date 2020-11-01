@@ -1,0 +1,8 @@
+$border-radius-md: 8px;
+$border-color-light: #eee;
+
+.CardView {
+  border-radius: $border-radius-md;
+  border: thin solid $border-color-light;
+  box-shadow: 0 4px 10px 0 rgba(60,106,172,.16);
+}

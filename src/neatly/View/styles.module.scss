@@ -1,0 +1,32 @@
+.View,
+.ViewStack {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.View.scrollable {
+  overflow-x: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+// Configure the flexibility of every flex item:
+//  flex-grow 1: Allow items to receive positive free space; 
+//  flex-shirink 0: Prevent items from receiving negative free space, instead, the container will sccroll if needed;
+//  flex-basis auto: Flex items will have their initial size determined by their content.
+.scrollable > * {
+  flex: 1 0 auto;
+}
+
+.ViewStack {
+  flex-direction: column;
+}
+
+.ViewStack.scrollable {
+  overflow-y: auto;
+}
