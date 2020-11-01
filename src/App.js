@@ -6,6 +6,30 @@ import "./styles.css";
 export default function App() {
   return (
     <>
+      <View padding="sm">
+        <CardView padding="lg" margin="sm">
+          Item 1
+        </CardView>
+        <CardView padding="lg" margin="sm">
+          Item 2
+        </CardView>
+        <CardView padding="lg" margin="sm">
+          Item 3
+        </CardView>
+      </View>
+
+      <View.Stack padding="sm">
+        <CardView padding="lg" margin="sm">
+          Item 1
+        </CardView>
+        <CardView padding="lg" margin="sm">
+          Item 2
+        </CardView>
+        <CardView padding="lg" margin="sm">
+          Item 3
+        </CardView>
+      </View.Stack>
+
       <View padding="sm" justify="left">
         <CardView padding="lg" margin="sm">
           Item 1
