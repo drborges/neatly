@@ -12,8 +12,76 @@
   flex: 0 0 auto;
 }
 
-.View {
+.View.justify-left {
+  justify-content: flex-start;
+}
+
+.ViewStack.justify-left {
   align-items: flex-start;
+}
+
+.View.justify-center {
+  justify-content: center;
+}
+
+.ViewStack.justify-center {
+  align-items: center;
+}
+
+.View.justify-right {
+  justify-content: flex-end;
+}
+
+.ViewStack.justify-right {
+  align-items: flex-end;
+}
+
+.View.align-top {
+  align-items: flex-start;
+}
+
+.ViewStack.align-top {
+  justify-content: flex-start;
+}
+
+.View.align-middle {
+  align-items: center;
+}
+
+.ViewStack.align-middle {
+  justify-content: center;
+}
+
+.View.align-bottom {
+  align-items: flex-end;
+}
+
+.ViewStack.align-bottom {
+  justify-content: flex-end;
+}
+
+.View.space-around {
+  justify-content: space-around;
+}
+
+.ViewStack.space-around {
+  justify-content: space-around;
+}
+
+.View.space-between {
+  justify-content: space-between;
+}
+
+.ViewStack.space-between {
+  justify-content: space-between;
+}
+
+.View.space-evenly {
+  justify-content: space-evenly;
+}
+
+.ViewStack.space-evenly {
+  justify-content: space-evenly;
 }
 
 .View.stretched > * {
