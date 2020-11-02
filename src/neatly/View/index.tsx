@@ -11,7 +11,7 @@ type ViewProps = {
   reverse: boolean;
   scroll: boolean;
   space: "around" | "between" | "evenly";
-  stretched: boolean;
+  stretch: boolean;
   tall: boolean;
   wrap: boolean | "reverse";
 };
@@ -24,7 +24,7 @@ const View = ({
   reverse = false,
   scroll = false,
   space,
-  stretched = false,
+  stretch = false,
   tall = false,
   wrap = false,
   ...props
@@ -35,7 +35,7 @@ const View = ({
     [styles[`space-${space}`]]: space,
     [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
-    [styles.stretched]: stretched,
+    [styles.stretch]: stretch,
     [styles.wrap]: wrap === true,
     [styles["wrap-reverse"]]: wrap === "reverse",
     [styles.tall]: tall
@@ -52,7 +52,7 @@ View.Stack = ({
   reverse = false,
   scroll = false,
   space,
-  stretched = false,
+  stretch = false,
   ...props
 }) => {
   const css = cn(styles.ViewStack, className, layout(props), {
@@ -61,7 +61,7 @@ View.Stack = ({
     [styles[`space-${space}`]]: space,
     [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
-    [styles.stretched]: stretched
+    [styles.stretch]: stretch
   });
 
   return <div className={css}>{children}</div>;

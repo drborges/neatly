@@ -84,7 +84,7 @@
   justify-content: space-evenly;
 }
 
-.View.stretched > * {
+.View.stretch > * {
   flex-grow: 1;
 }
 
@@ -129,7 +129,7 @@
   overflow-y: auto;
 }
 
-.ViewStack.stretched {
+.ViewStack.stretch {
   align-items: stretch;
 }
 

@@ -399,7 +399,7 @@ export default function App() {
       </div>
 
       <div style={{ border: "thin solid #eee" }}>
-        <View padding="sm" stretched>
+        <View padding="sm" stretch>
           <CardView padding="lg" margin="sm">
             Item 1
           </CardView>
@@ -413,7 +413,7 @@ export default function App() {
       </div>
 
       <div style={{ border: "thin solid #eee" }}>
-        <View.Stack padding="sm" stretched>
+        <View.Stack padding="sm" stretch>
           <CardView padding="lg" margin="sm">
             Item 1
           </CardView>
