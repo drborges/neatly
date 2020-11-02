@@ -6,101 +6,117 @@ import "./styles.css";
 export default function App() {
   return (
     <>
-      <View padding="sm">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View>
+      <div style={{ border: "thin solid #eee" }}>
+        <View padding="sm">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View>
+      </div>
 
-      <View.Stack padding="sm">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View.Stack>
+      <div style={{ border: "thin solid #eee" }}>
+        <View.Stack padding="sm">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View.Stack>
+      </div>
 
-      <View padding="sm" justify="left">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View>
+      <div style={{ border: "thin solid #eee" }}>
+        <View padding="sm" justify="left">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View>
+      </div>
 
-      <View.Stack padding="sm" justify="left">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View.Stack>
+      <div style={{ border: "thin solid #eee" }}>
+        <View.Stack padding="sm" justify="left">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View.Stack>
+      </div>
 
-      <View padding="sm" justify="center">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View>
+      <div style={{ border: "thin solid #eee" }}>
+        <View padding="sm" justify="center">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View>
+      </div>
 
-      <View.Stack padding="sm" justify="center">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View.Stack>
+      <div style={{ border: "thin solid #eee" }}>
+        <View.Stack padding="sm" justify="center">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View.Stack>
+      </div>
 
-      <View padding="sm" justify="right">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View>
+      <div style={{ border: "thin solid #eee" }}>
+        <View padding="sm" justify="right">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View>
+      </div>
 
-      <View.Stack padding="sm" justify="right">
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View.Stack>
+      <div style={{ border: "thin solid #eee" }}>
+        <View.Stack padding="sm" justify="right">
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View.Stack>
+      </div>
 
       <div style={{ height: "400px", border: "thin solid #eee" }}>
         <View padding="sm" align="top">
@@ -270,53 +286,62 @@ export default function App() {
         </View.Stack>
       </div>
 
-      <View padding="sm" stretched>
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View>
+      <div style={{ border: "thin solid #eee" }}>
+        <View padding="sm" stretched>
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View>
+      </div>
 
-      <View.Stack padding="sm" stretched>
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-      </View.Stack>
+      <div style={{ border: "thin solid #eee" }}>
+        <View.Stack padding="sm" stretched>
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+        </View.Stack>
+      </div>
 
-      <View padding="sm" scroll>
-        <CardView padding="lg" margin="sm">
-          Item 1
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 2
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 3
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 4
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 5
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 6
-        </CardView>
-        <CardView padding="lg" margin="sm">
-          Item 7
-        </CardView>
-      </View>
+      <div style={{ border: "thin solid #eee" }}>
+        <View padding="sm" scroll>
+          <CardView padding="lg" margin="sm">
+            Item 1
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 2
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 3
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 4
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 5
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 6
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 7
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 8
+          </CardView>
+        </View>
+      </div>
 
       <div style={{ height: "200px" }}>
         <View.Stack padding="sm" scroll>
@@ -340,6 +365,9 @@ export default function App() {
           </CardView>
           <CardView padding="lg" margin="sm">
             Item 7
+          </CardView>
+          <CardView padding="lg" margin="sm">
+            Item 8
           </CardView>
         </View.Stack>
       </div>
