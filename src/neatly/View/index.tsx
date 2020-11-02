@@ -8,6 +8,7 @@ const View = ({
   justify = "left",
   children,
   className,
+  reverse = false,
   scroll = false,
   space,
   stretched = false,
@@ -17,6 +18,7 @@ const View = ({
     [styles[`align-${align}`]]: true,
     [styles[`justify-${justify}`]]: !space,
     [styles[`space-${space}`]]: space,
+    [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
     [styles.stretched]: stretched
   });
@@ -29,6 +31,7 @@ View.Stack = ({
   justify = "left",
   children,
   className,
+  reverse = false,
   scroll = false,
   space,
   stretched = false,
@@ -38,6 +41,7 @@ View.Stack = ({
     [styles[`align-${align}`]]: !space,
     [styles[`justify-${justify}`]]: true,
     [styles[`space-${space}`]]: space,
+    [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
     [styles.stretched]: stretched
   });

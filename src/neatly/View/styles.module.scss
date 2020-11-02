@@ -92,6 +92,18 @@
   overflow-x: auto;
 }
 
+.View.reverse {
+  flex-direction: row-reverse;
+}
+
+.View.reverse.justify-left {
+  justify-content: flex-end;
+}
+
+.View.reverse.justify-right {
+  justify-content: flex-start;
+}
+
 .scrollable::-webkit-scrollbar {
   display: none;
 }
@@ -107,4 +119,16 @@
 
 .ViewStack.stretched {
   align-items: stretch;
+}
+
+.ViewStack.reverse {
+  flex-direction: column-reverse;
+}
+
+.ViewStack.reverse.align-top {
+  justify-content: flex-end;
+}
+
+.ViewStack.reverse.align-bottom {
+  justify-content: flex-start;
 }
