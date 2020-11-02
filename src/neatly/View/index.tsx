@@ -5,28 +5,28 @@ import { layout } from "../helpers/layout";
 
 type ViewProps = {
   align: "top" | "middle" | "bottom";
-  justify: "left" | "center" | "right";
   children: Node;
   className: string;
-  reverse: boolean;
   scroll: boolean;
+  justify: "left" | "center" | "right";
+  reverse: boolean;
   space: "around" | "between" | "evenly";
-  style: CSSProperties;
   stretch: boolean;
+  style: CSSProperties;
   tall: boolean;
   wrap: boolean | "reverse";
 };
 
 const View = ({
   align = "top",
-  justify = "left",
   children,
   className,
-  reverse = false,
   scroll = false,
+  justify = "left",
+  reverse = false,
   space,
-  style,
   stretch = false,
+  style,
   tall = false,
   wrap = false,
   ...props
@@ -50,18 +50,30 @@ const View = ({
   );
 };
 
+type ViewStackProps = {
+  align: "top" | "middle" | "bottom";
+  children: Node;
+  className: string;
+  scroll: boolean;
+  justify: "left" | "center" | "right";
+  reverse: boolean;
+  space: "around" | "between" | "evenly";
+  stretch: boolean;
+  style: CSSProperties;
+};
+
 View.Stack = ({
   align = "top",
-  justify = "left",
   children,
   className,
-  reverse = false,
   scroll = false,
+  justify = "left",
+  reverse = false,
   space,
   style,
   stretch = false,
   ...props
-}) => {
+}: ViewStackProps) => {
   const css = cn(styles.ViewStack, className, layout(props), {
     [styles[`align-${align}`]]: !space,
     [styles[`justify-${justify}`]]: true,

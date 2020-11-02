@@ -15,3 +15,18 @@ body,
   padding: 0;
   width: 100vw;
 }
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: thin solid #eee;
+}
+
+.view > section {
+  height: 250px;
+}
+
+.view-stack > section {
+  height: 400px;
+}
