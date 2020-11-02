@@ -60,6 +60,7 @@ type ViewStackProps = {
   space: "around" | "between" | "evenly";
   stretch: boolean;
   style: CSSProperties;
+  tall: boolean;
 };
 
 View.Stack = ({
@@ -72,6 +73,7 @@ View.Stack = ({
   space,
   style,
   stretch = false,
+  tall = false,
   ...props
 }: ViewStackProps) => {
   const css = cn(styles.ViewStack, className, layout(props), {
@@ -80,7 +82,8 @@ View.Stack = ({
     [styles[`space-${space}`]]: space,
     [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
-    [styles.stretch]: stretch
+    [styles.stretch]: stretch,
+    [styles.tall]: tall,
   });
 
   return (

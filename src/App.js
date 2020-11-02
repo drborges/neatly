@@ -585,6 +585,21 @@ export default function App() {
         </section>
 
         <section>
+          <h2>Tall</h2>
+          <View.Stack padding="sm" tall>
+            <CardView padding="lg" margin="sm">
+              Item 1
+            </CardView>
+            <CardView padding="lg" margin="sm">
+              Item 2
+            </CardView>
+            <CardView padding="lg" margin="sm">
+              Item 3
+            </CardView>
+          </View.Stack>
+        </section>
+
+        <section>
           <h2>Scroll</h2>
           <View.Stack padding="sm" scroll>
             <CardView padding="lg" margin="sm">

@@ -133,6 +133,10 @@
   align-items: stretch;
 }
 
+.ViewStack.tall > * {
+  flex-grow: 1;
+}
+
 .ViewStack.reverse {
   flex-direction: column-reverse;
 }
