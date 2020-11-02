@@ -104,6 +104,10 @@
   flex-wrap: wrap-reverse;
 }
 
+.View.tall {
+  align-items: stretch;
+}
+
 .View.reverse.justify-left {
   justify-content: flex-end;
 }

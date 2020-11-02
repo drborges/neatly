@@ -12,6 +12,7 @@ type ViewProps = {
   scroll: boolean;
   space: "around" | "between" | "evenly";
   stretched: boolean;
+  tall: boolean;
   wrap: boolean | "reverse";
 };
 
@@ -24,6 +25,7 @@ const View = ({
   scroll = false,
   space,
   stretched = false,
+  tall = false,
   wrap = false,
   ...props
 }: ViewProps) => {
@@ -35,7 +37,8 @@ const View = ({
     [styles.scrollable]: scroll,
     [styles.stretched]: stretched,
     [styles.wrap]: wrap === true,
-    [styles["wrap-reverse"]]: wrap === "reverse"
+    [styles["wrap-reverse"]]: wrap === "reverse",
+    [styles.tall]: tall
   });
 
   return <div className={css}>{children}</div>;
