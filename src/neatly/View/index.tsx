@@ -3,6 +3,18 @@ import cn from "classnames";
 import styles from "./styles.module.scss";
 import { layout } from "../helpers/layout";
 
+type ViewProps = {
+  align: "top" | "middle" | "bottom";
+  justify: "left" | "center" | "right";
+  children: Node;
+  className: string;
+  reverse: boolean;
+  scroll: boolean;
+  space: "around" | "between" | "evenly";
+  stretched: boolean;
+  wrap: boolean | "reverse";
+};
+
 const View = ({
   align = "top",
   justify = "left",
@@ -12,15 +24,18 @@ const View = ({
   scroll = false,
   space,
   stretched = false,
+  wrap = false,
   ...props
-}) => {
+}: ViewProps) => {
   const css = cn(styles.View, className, layout(props), {
     [styles[`align-${align}`]]: true,
     [styles[`justify-${justify}`]]: !space,
     [styles[`space-${space}`]]: space,
     [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
-    [styles.stretched]: stretched
+    [styles.stretched]: stretched,
+    [styles.wrap]: wrap === true,
+    [styles["wrap-reverse"]]: wrap === "reverse"
   });
 
   return <div className={css}>{children}</div>;

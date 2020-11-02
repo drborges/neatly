@@ -96,6 +96,14 @@
   flex-direction: row-reverse;
 }
 
+.View.wrap {
+  flex-wrap: wrap;
+}
+
+.View.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
 .View.reverse.justify-left {
   justify-content: flex-end;
 }
