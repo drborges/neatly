@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import cn from "classnames";
 import styles from "./styles.module.scss";
 import { layout } from "../helpers/layout";
@@ -11,6 +11,7 @@ type ViewProps = {
   reverse: boolean;
   scroll: boolean;
   space: "around" | "between" | "evenly";
+  style: CSSProperties;
   stretch: boolean;
   tall: boolean;
   wrap: boolean | "reverse";
@@ -24,6 +25,7 @@ const View = ({
   reverse = false,
   scroll = false,
   space,
+  style,
   stretch = false,
   tall = false,
   wrap = false,
@@ -41,7 +43,11 @@ const View = ({
     [styles.tall]: tall
   });
 
-  return <div className={css}>{children}</div>;
+  return (
+    <div className={css} style={style}>
+      {children}
+    </div>
+  );
 };
 
 View.Stack = ({
@@ -52,6 +58,7 @@ View.Stack = ({
   reverse = false,
   scroll = false,
   space,
+  style,
   stretch = false,
   ...props
 }) => {
@@ -64,7 +71,11 @@ View.Stack = ({
     [styles.stretch]: stretch
   });
 
-  return <div className={css}>{children}</div>;
+  return (
+    <div className={css} style={style}>
+      {children}
+    </div>
+  );
 };
 
 export default View;
