@@ -1,20 +1,20 @@
 import React, { CSSProperties } from "react";
 import cn from "classnames";
 import styles from "./styles.module.scss";
-import { layout } from "../helpers/layout";
+import { layout, LayoutProps } from "../helpers/layout";
 
-type ViewProps = {
-  align: "top" | "middle" | "bottom";
+type ViewProps = LayoutProps & {
+  align?: "top" | "middle" | "bottom";
   children: Node;
-  className: string;
-  scroll: boolean;
-  justify: "left" | "center" | "right";
-  reverse: boolean;
-  space: "around" | "between" | "evenly";
-  stretch: boolean;
-  style: CSSProperties;
-  tall: boolean;
-  wrap: boolean | "reverse";
+  className?: string;
+  scroll?: boolean;
+  justify?: "left" | "center" | "right";
+  reverse?: boolean;
+  space?: "around" | "between" | "evenly";
+  stretch?: boolean;
+  style?: CSSProperties;
+  tall?: boolean;
+  wrap?: boolean | "reverse";
 };
 
 const View = ({
@@ -50,17 +50,17 @@ const View = ({
   );
 };
 
-type ViewStackProps = {
-  align: "top" | "middle" | "bottom";
+type ViewStackProps = LayoutProps & {
+  align?: "top" | "middle" | "bottom";
   children: Node;
-  className: string;
-  scroll: boolean;
-  justify: "left" | "center" | "right";
-  reverse: boolean;
-  space: "around" | "between" | "evenly";
-  stretch: boolean;
-  style: CSSProperties;
-  tall: boolean;
+  className?: string;
+  scroll?: boolean;
+  justify?: "left" | "center" | "right";
+  reverse?: boolean;
+  space?: "around" | "between" | "evenly";
+  stretch?: boolean;
+  style?: CSSProperties;
+  tall?: boolean;
 };
 
 View.Stack = ({
