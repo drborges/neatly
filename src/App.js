@@ -10,6 +10,21 @@ export default function App() {
         <h1>{"<View />"}</h1>
 
         <section>
+          <h2>Override underlying tag</h2>
+          <View padding="sm" as="span">
+            <CardView padding="lg" margin="sm">
+              Item 1
+            </CardView>
+            <CardView padding="lg" margin="sm">
+              Item 2
+            </CardView>
+            <CardView padding="lg" margin="sm">
+              Item 3
+            </CardView>
+          </View>
+        </section>
+
+        <section>
           <h2>Default</h2>
           <View padding="sm">
             <CardView padding="lg" margin="sm">
@@ -205,7 +220,7 @@ export default function App() {
         </section>
 
         <section>
-          <h2>Stretched</h2>
+          <h2>Stretch</h2>
           <View padding="sm" stretch>
             <CardView padding="lg" margin="sm">
               Item 1
@@ -556,8 +571,8 @@ export default function App() {
         </section>
 
         <section>
-          <h2>Stretched</h2>
-          <View.Stack padding="sm" stretch>
+          <h2>Stretch</h2>
+          <View.Stack stretch>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>

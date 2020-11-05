@@ -18,6 +18,7 @@ type ViewProps = LayoutProps & {
 };
 
 const View = ({
+  as = "div",
   align = "top",
   children,
   className,
@@ -31,6 +32,7 @@ const View = ({
   wrap = false,
   ...props
 }: ViewProps) => {
+  const Tag = `${as}`;
   const css = cn(styles.View, className, layout(props), {
     [styles[`align-${align}`]]: true,
     [styles[`justify-${justify}`]]: !space,
@@ -44,9 +46,9 @@ const View = ({
   });
 
   return (
-    <div className={css} style={style}>
+    <Tag className={css} style={style}>
       {children}
-    </div>
+    </Tag>
   );
 };
 
@@ -83,7 +85,7 @@ View.Stack = ({
     [styles.reverse]: reverse,
     [styles.scrollable]: scroll,
     [styles.stretch]: stretch,
-    [styles.tall]: tall,
+    [styles.tall]: tall
   });
 
   return (
