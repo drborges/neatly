@@ -116,7 +116,7 @@ export default function App() {
 
         <section>
           <h2>Align Top</h2>
-          <View padding="sm" align="top">
+          <View padding="sm" align="top" style={{ height: 200 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -131,7 +131,7 @@ export default function App() {
 
         <section>
           <h2>Align Middle</h2>
-          <View padding="sm" align="middle">
+          <View padding="sm" align="middle" style={{ height: 200 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -146,7 +146,7 @@ export default function App() {
 
         <section>
           <h2>Align Bottom</h2>
-          <View padding="sm" align="bottom">
+          <View padding="sm" align="bottom" style={{ height: 200 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -221,7 +221,7 @@ export default function App() {
 
         <section>
           <h2>Tall</h2>
-          <View tall>
+          <View tall style={{ height: 200 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -236,7 +236,7 @@ export default function App() {
 
         <section>
           <h2>Wrap</h2>
-          <View padding="sm" style={{ width: 300 }} wrap>
+          <View padding="sm" style={{ width: 500 }} wrap>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -248,25 +248,13 @@ export default function App() {
             </CardView>
             <CardView padding="lg" margin="sm">
               Item 4
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 5
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 6
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 7
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 8
             </CardView>
           </View>
         </section>
 
         <section>
           <h2>Reversed Wrap</h2>
-          <View padding="sm" style={{ width: 300 }} wrap="reverse">
+          <View padding="sm" style={{ width: 500 }} wrap="reverse">
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -278,18 +266,6 @@ export default function App() {
             </CardView>
             <CardView padding="lg" margin="sm">
               Item 4
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 5
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 6
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 7
-            </CardView>
-            <CardView padding="lg" margin="sm">
-              Item 8
             </CardView>
           </View>
         </section>
@@ -436,7 +412,7 @@ export default function App() {
 
         <section>
           <h2>Align Top</h2>
-          <View.Stack padding="sm" align="top">
+          <View.Stack padding="sm" align="top" style={{ height: 500 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -451,7 +427,7 @@ export default function App() {
 
         <section>
           <h2>Reversed Align Top</h2>
-          <View.Stack padding="sm" align="top" reverse>
+          <View.Stack padding="sm" align="top" style={{ height: 500 }} reverse>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -466,7 +442,7 @@ export default function App() {
 
         <section>
           <h2>Align Middle</h2>
-          <View.Stack padding="sm" align="middle">
+          <View.Stack padding="sm" align="middle" style={{ height: 500 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -481,7 +457,12 @@ export default function App() {
 
         <section>
           <h2>Reversed Align Middle</h2>
-          <View.Stack padding="sm" align="middle" reverse>
+          <View.Stack
+            padding="sm"
+            align="middle"
+            style={{ height: 500 }}
+            reverse
+          >
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -496,7 +477,7 @@ export default function App() {
 
         <section>
           <h2>Align Bottom</h2>
-          <View.Stack padding="sm" align="bottom">
+          <View.Stack padding="sm" align="bottom" style={{ height: 500 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -511,7 +492,12 @@ export default function App() {
 
         <section>
           <h2>Reversed Align Bottom</h2>
-          <View.Stack padding="sm" align="bottom" reverse>
+          <View.Stack
+            padding="sm"
+            align="bottom"
+            style={{ height: 500 }}
+            reverse
+          >
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -526,7 +512,7 @@ export default function App() {
 
         <section>
           <h2>Sapce Around</h2>
-          <View.Stack padding="sm" space="around">
+          <View.Stack padding="sm" space="around" style={{ height: 500 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -541,7 +527,7 @@ export default function App() {
 
         <section>
           <h2>Sapce Between</h2>
-          <View.Stack padding="sm" space="between">
+          <View.Stack padding="sm" space="between" style={{ height: 500 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -556,7 +542,7 @@ export default function App() {
 
         <section>
           <h2>Sapce Evenly</h2>
-          <View.Stack padding="sm" space="evenly">
+          <View.Stack padding="sm" space="evenly" style={{ height: 500 }}>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -586,7 +572,7 @@ export default function App() {
 
         <section>
           <h2>Tall</h2>
-          <View.Stack padding="sm" tall>
+          <View.Stack padding="sm" style={{ height: 500 }} tall>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>
@@ -601,7 +587,7 @@ export default function App() {
 
         <section>
           <h2>Scroll</h2>
-          <View.Stack padding="sm" scroll>
+          <View.Stack padding="sm" style={{ height: 300 }} scroll>
             <CardView padding="lg" margin="sm">
               Item 1
             </CardView>

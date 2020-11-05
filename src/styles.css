@@ -22,11 +22,3 @@ section {
   flex-direction: column;
   border: thin solid #eee;
 }
-
-.view > section {
-  height: 250px;
-}
-
-.view-stack > section {
-  height: 400px;
-}
