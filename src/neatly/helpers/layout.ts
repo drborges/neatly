@@ -15,7 +15,7 @@ export type LayoutProps = {
   paddingTop?: "none" | "xs" | "sm" | "md" | "lg" | "xl";
   paddingX?: "none" | "xs" | "sm" | "md" | "lg" | "xl";
   paddingY?: "none" | "xs" | "sm" | "md" | "lg" | "xl";
-}
+};
 
 export const layout = ({
   margin = "none",
@@ -31,7 +31,7 @@ export const layout = ({
   paddingRight = "none",
   paddingTop = "none",
   paddingX = "none",
-  paddingY = "none",
+  paddingY = "none"
 }: LayoutProps) => ({
   [styles[`margin-${margin}`]]: true,
   [styles[`margin-bottom-${marginBottom}`]]: true,
@@ -46,5 +46,5 @@ export const layout = ({
   [styles[`padding-right-${paddingRight}`]]: true,
   [styles[`padding-top-${paddingTop}`]]: true,
   [styles[`padding-x-${paddingX}`]]: true,
-  [styles[`padding-y-${paddingY}`]]: true,
+  [styles[`padding-y-${paddingY}`]]: true
 });
